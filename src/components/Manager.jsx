@@ -74,17 +74,16 @@ const Manager = () => {
         <>
             <ToastContainer />
             <div className="min-h-screen flex flex-col bg-white">
-                
-                {/* Center Container to match your image exactly */}
+             
                 <div className="flex-grow md:mycontainer p-5 md:px-0">
                      <h3 className="text-2xl p-3 font-bold text-center text-blue-700">Password Manager</h3>
                     <p className="text-center text-blue-500">Your encrypted vault for passwords.</p>
 
                     <div className="flex flex-col p-4 text-black gap-5 items-center max-w-4xl mx-auto">
-                        {/* URL Input */}
+                  
                         <input value={form.site} onChange={handleChange} placeholder='Enter website URL' className='rounded-full border border-blue-900 w-full px-5 py-1.5 outline-none' type="text" name="site" id="site" />
                         
-                        {/* Middle Row: Username and Password */}
+                      
                         <div className="flex flex-col md:flex-row w-full justify-between gap-5">
                             <input value={form.username} onChange={handleChange} placeholder='Enter Username' className='rounded-full border border-blue-900 w-full px-5 py-1.5 outline-none' type="text" name="username" id="username" />
                             
@@ -96,7 +95,7 @@ const Manager = () => {
                             </div>
                         </div>
 
-                        {/* Save Button styled to match image */}
+                      
                         <button onClick={savePassword} className='flex justify-center items-center gap-2 bg-blue-300 hover:bg-blue-200 rounded-full px-8 py-2 w-fit border border-blue-900 font-bold transition-all'>
                             <lord-icon
                                 src="https://cdn.lordicon.com/jgnvfzqg.json"
@@ -108,7 +107,7 @@ const Manager = () => {
                         </button>
                     </div>
 
-                    {/* Table Section */}
+                  
                     <div className="passwords mt-14 max-w-5xl mx-auto">
                         <h2 className='font-bold text-2xl py-4'>Your Passwords</h2>
                         {passwordArray.length === 0 && <div className='text-gray-400 italic'> No passwords to show...</div>}
@@ -172,5 +171,6 @@ const Manager = () => {
         </>
     )
 }
+
 
 export default Manager
